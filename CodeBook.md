@@ -58,7 +58,6 @@ tBodyGyroJerkMag).
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ,
 fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to
 indicate frequency domain signals).
-
 ```
 
 The set of variables that were estimated from these signals are different statistical measures and wherever 3-dimensional data have been captured, the variables have been segregated for each of the dimensions (X, Y and Z).
@@ -67,13 +66,11 @@ The output of run_analysis.R is a 180 x 81 data.frame. The variables are as foll
 
 ```
 subject: int 1:30
-
 ```
 and 
 
 ```
 activity: 6 character strings WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-
 ```
 For each combination of subject and activity (total 30*6=180), averages of all observations are calculated. I have picked up only those observations that are related to either mean or standard deviation. I have not considered any of the angle variables as they do not directly represent any mean or standard deviation measure. The complete list of 81 column variables are given below out of which 3:81 are numeric variables
 
