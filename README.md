@@ -19,7 +19,10 @@ To run the run_analysis.R code -
 * Set the working directory in R to "UCI HAR Dataset" 
 * Source the file in that location using the command: source("run_analysis.R")
 * The output file name will be "tidy_data.txt"
-* You may read the file using: tidy <- read.table("tidy_data.txt", header=TRUE, check.names=FALSE)
+* You may read the file using the command 
+```
+tidy <- read.table("tidy_data.txt", header=TRUE, check.names=FALSE)
+```
 * After that you may view the result using: View(tidy)
 
 ## What are the pre-requisites? ##
@@ -31,7 +34,7 @@ The code uses the following libraries -
 * library(dplyr)
 * library(reshape2)
 
-So if these packages are not installed already in your R environment, then install those using "install.packages("...") commands as given below -
+So if these packages are not installed already in your R environment, then install those using install.packages("...") commands as given below -
 
 * install.packages("utils")
 * install.packages("plyr")
